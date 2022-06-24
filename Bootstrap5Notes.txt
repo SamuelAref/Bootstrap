@@ -1,0 +1,814 @@
+Bootstrap 5 Crash course from Net Ninja 
+
+        Tutorial #1 - Intro & Setup 
+
+                What is Bootstrap (5)?
+
+                    - Front-end , CSS & javascript for making mobile -first, responsive websites 
+                    - Includes pre-made components - navbars, modals, tabs, tooltips, buttons, accordions & more...
+                    - Comes fully baked with a responsive, 12 column, CSS grid system for layouts 
+                    - Easy to customize & also ensures browser compatibility (for supported browsers)
+
+                multiple ways to add bootstrap (https://getbootstrap.com/) 
+
+                        - download js and css files and add them directly to our proeject folder ( from website )
+                        - cdn bundles (links) (from website)
+                        - npm install (locally)
+                        
+        Tutorial #2 - Bootstrap 5 New Features 
+
+            - Bootstrap 5 has dropped jQuery!
+            - Forms have been revamped 
+            - Right-To-Left (RTL) support added 
+            - New utitlity classes (positioning, font size, border radius etc)
+            - Minor changes to some components & grid (Jumbotron gone)
+            - Bootstrap Icons
+            - Two new components -  Off canvas and Accordion
+
+        Tutorial #3 - Colors & Typography 
+
+                index.html file // these are some of the different classes we can apply, there are more on the documentation 
+
+                    <!-- heading tags -->
+
+                        <h1>Bootstrap 5 Tutorial</h1>
+                        <h2>this is an h2</h2>
+                        <h3>this is an h3</h3>
+
+                        <h2 class="h3">This is an h2 tag with the h3 class</h2>
+
+                    <!-- display headings -->
+
+                        <h1 class="display-1">display 1 heading</h1>
+                        <h1 class="display-2">display 1 heading</h1>
+                        <h1 class="display-3">display 1 heading</h1>
+                        <p class="display-5">p tag with display 1 class</p>
+
+                    <!-- lead text & alignment -->
+
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="lead text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        <p class="lead text-end">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        <p class="lead text-start">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+
+                    <!-- text decoration & font weight -->
+
+                        <p class="text-decoration-underline">this is underlined text</p>
+                        <p class="text-decoration-line-through">this is line-through text</p>
+                        <p class="fw-bold">this is bold text</p>
+                        <small>this is small text</small>
+
+                    <!-- text colors -->
+
+                        <p class="text-primary">theme primary color</p>
+                        <p class="text-secondary">theme secondary color</p>
+                        <p class="text-info">theme info color</p>
+                        <p class="text-warning">theme warning color</p>
+                        <p class="text-success">theme warning color</p>
+                        <p class="text-danger">theme danger color</p>
+                        <p class="text-muted">theme danger color</p>
+
+                    <!-- bg colors -->
+
+                        <p class="text-white bg-primary">white text on primary bg</p>
+                        <p class="text-white bg-secondary">white text on secondary bg</p>
+                        <p class="text-light bg-danger">white text on danger bg</p>
+
+        Tutorial #4 - Buttons & Button Groups 
+
+                    Buttons are components 
+
+
+                    index.html file 
+
+                        <!-- basic buttons -->
+                            <h2>Buttons</h2>
+
+                            <button class="btn btn-primary">primary button</button>
+                            <button class="btn btn-secondary">secondary button</button>
+
+                        <!-- anchor tags as buttons -->
+                            <h2>Links as buttons</h2>
+
+                            <a href="#" class="btn btn-info">Info anchor</a>
+                            <a href="#" class="btn btn-success">success anchor</a>
+
+                        <!-- button sizes -->
+                            <h2>Button sizes</h2>
+
+                            <button class="btn btn-lg btn-danger">large danger button</button>
+                            <button class="btn btn-sm btn-danger">large danger button</button>
+                            
+                        <!-- outlined styles -->
+                            <h2>Button Styles</h2>
+
+                            <button class="btn btn-outline-primary">outlined primary button</button>
+                            <button class="btn btn-outline-secondary btn-lg">outlined secondary button</button>
+
+                        <!-- button groups  -->
+                            <h2>Button Groups</h2> 
+                            <!-- groups buttons together -->
+
+
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-primary">button 1</a>
+                                <a href="#" class="btn btn-primary">button 2</a>
+                                <a href="#" class="btn btn-primary">button 3</a>
+
+                            </div>
+
+        Tutorial #5 - Utility Classes 
+
+                - used to change properties of components 
+
+                    index.html file 
+
+                            <!-- margin and padding  values 1 - 5-->
+
+                                <div class="bg-primary m-1">small margin and padding</div> 
+                                <div class="bg-primary p-3">small margin and padding</div> 
+                                <div class="bg-primary my-3 px-5">margin in y direction</div>
+                                <div class="bg-primary mt-2 mb-4 ms-2 me-3">m & p for each direction</div>
+                                    <!-- mt - margin top ms - margin left me - margin right mb margin bottom -->
+
+                            <!-- borders -->
+
+                                <div class="m-3 p-3 border">default</div>
+                                <div class="m-3 p-3 border-top border-end">invividual</div>
+                                <div class="m-3 p-3 border-start border-success">border success color at start</div>
+                                <div class="m-3 p-3 border-start border-danger border-5">Thicker border</div>
+                                <div class="m-3 p-3 rounded border border-5">rounded corners</div>
+                                <div class="m-3 p-3 rounded-pill border border-5">rounded pill corners</div>
+
+
+                            <!-- box shadow -->
+
+                                <div class="m-3 p-3 shadow-sm">element with small box shadow</div>
+                                <div class="m-3 p-3 shadow-lg">element with small box shadow</div>
+                                <div class="m-3 p-3 shadow">element with small box shadow</div>
+
+
+                            <!-- font weight -->
+
+                                <p class="fw-bold">bold text</p>
+                                <p class="fw-bolder">bolder text</p>
+                                <p class="">normal text</p>
+                                <p class="fw-light">light text</p>
+                                <p class="fst-italic fw-light">light text</p>
+
+        Tutorial #6 - Containers and page layout
+
+                website for break points in containers - https://getbootstrap.com/docs/5.0/layout/breakpoints/
+
+                index.html file 
+
+                    
+                    <!-- keep in mind that bootstrap is mobile first design approach  -->
+
+                        <!-- central -->
+                            <div class="container my-5">
+
+                                <h2>normal container</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod amet tenetur odit, eveniet assumenda accusamus nisi maxime, esse atque cumque fuga, eum quae praesentium dolorum saepe quasi nobis non aliquid.</p>
+                            </div>
+
+                        <!-- always 100% width fluid container -->
+                            <div class="container-fluid">
+
+                                <h2>fluid container</h2>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima quis eum atque, nesciunt officia amet tempora neque iusto nihil dolore illo hic esse expedita. Vel odio consequuntur a modi ex.
+                                </p>
+                            </div>
+
+                        <!-- fullscreen until a certain length is passed above the threshhold lg -->
+                            <div class="container-lg my-5">
+
+                                <h2>100% width until lg screens, then becomes container</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi culpa mollitia quae suscipit rerum ullam quo accusantium deserunt consectetur! Ad ex qui reiciendis rerum commodi, dicta dignissimos tempora aliquid iure!</p>
+                            </div>
+
+                        <!-- fullscreen until a certain length is passed above the threshhold xl  -->
+
+                            <div class="container-xl my-5">
+
+                                <h2>100% width until xl screens, then container</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit natus eveniet reprehenderit eius pariatur, odio rem explicabo eligendi ab voluptatum cumque voluptas nostrum corporis, sunt maxime aliquid blanditiis quae incidunt?</p>
+                            </div>
+
+        Tutorial #7 - Grid Layout (part 1)
+
+                - bootstrap uses 12 column systems 
+
+                index.html file 
+
+                     <!-- basic grid row and col -->
+
+                        <div class="container-lg my-5">
+
+                            <h2>basic grid</h2>
+                            <div class="row">
+
+                                <div class="col">
+                                    <div class="p-5 bg-primary text-light">col 1</div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="p-5 bg-primary text-light">col 2</div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="p-5 bg-primary text-light">col 3</div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="p-5 bg-primary text-light">col 3</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    <!-- specify columns each col should take -->
+                        <div class="container-lg my-5">
+
+                            <h2>column widths</h2>
+                            <div class="row">
+
+                                <div class="col-6">
+                                    <div class="p-5 bg-primary text-light">col 1</div>
+                                </div>
+
+                                <div class="col-3">
+                                    <div class="p-5 bg-primary text-light">col 2</div>
+                                </div>
+
+                                <div class="col-3">
+                                    <div class="p-5 bg-primary text-light">col 3</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    <!-- specify which screens should get how much cols -->
+                        <div class="container-lg my-5">
+
+                            <h2>responsive column widths</h2>
+
+                            <div class="row">
+
+                                <div class="col-sm-4 col-lg-6">
+                                    <div class="p-5 bg-primary text-light">col 1</div>
+                                </div>
+
+                                <div class="col-sm-4 col-lg-3">
+                                    <div class="p-5 bg-primary text-light">col 2</div>
+                                </div>
+
+                                <div class="col-sm-4 col-lg-3">
+                                    <div class="p-5 bg-primary text-light">col 3</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    <!-- justifying cols with justify content (center, start or end)  -->
+                        <div class="container-lg my-5">
+
+                            <h2>justifying columns </h2>
+
+                            <div class="row justify-content-center">
+
+                                <div class="col-md-3">
+                                    <div class="p-5 bg-primary text-light">col 1</div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="p-5 bg-primary text-light">col 2</div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="p-5 bg-primary text-light">col 3</div>
+                                </div>
+                            </div>
+                        </div>
+
+        Tutorial #8 - Grid Layout (part 2)
+
+                index.html file 
+
+                    
+                    <!-- main image & intro text -->
+
+                        <section id="intro">
+
+                            <div class="container-lg">
+
+                                <div class="row justify-content-center align-items-center">
+
+                                    <div class="col-md-5 text-center text-md-start">
+
+                                            <h1>
+                                                <div class="display-2">Black-Belt</div>
+                                                <div class="display-5 text-muted">Your Coding Skills</div>
+                                            </h1>
+                                            <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, rem.</p>
+                                            <a href="#pricing" class="btn btn-secondary btn-lg">Buy Now</a>
+                                    </div>
+
+                                    <div class="col-md-5 text-center d-none d-md-block">
+
+                                        <img class="img-fluid" src="./assets/ebook-cover.png" alt="ebook cover">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+
+        Tutorial #9 - Navbars 
+
+            you can view various nav bars from  documentations 
+
+                index.html 
+
+                     <!-- navbar -->
+                        <nav class="navbar navbar-expand-md navbar-light pt-5 pb-4">
+                            <div class="container-xxl">
+                            <!-- navbar brand / title -->
+                            <a class="navbar-brand" href="#intro">
+                                <span class="text-secondary fw-bold">
+                                Net Ninja Pro - the Book
+                                </span>
+                            </a>
+                            <!-- toggle button for mobile nav -->
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <!-- navbar links -->
+                            <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+                                <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#topics">About The Book</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#reviews">Reviews</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contact">Get in Touch</a>
+                                </li>
+                                <li class="nav-item d-md-none">
+                                    <a class="nav-link" href="#pricing">Pricing</a>
+                                </li>
+                                <li class="nav-item ms-2 d-none d-md-inline">
+                                    <a class="btn btn-secondary" href="#pricing">buy now</a>
+                                </li>
+                                
+                                </ul>
+                            </div>
+                            </div>
+                        </nav>
+
+        Tutorial #10 - Cards 
+
+            pricing with cards 
+
+                index.html file 
+
+                    <!-- pricing plans -->
+
+                        <section id="pricing" class="bg-light mt-5">
+
+                            <div class="row my-5 g-0 align-items-center justify-content-center">
+                                <div class="col-8 col-lg-4 col-xl-3">
+
+                                <div class="card border-0">
+                                    <div class="card-body text-center py-4">
+                                    <h4 class="card-title">Starter Edition</h4>
+                                    <p class="lead card-subtitle">eBook download only</p>
+                                    <p class="display-5 my-4 text-primary fw-bold">$12.99</p>
+                                    <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, vitae magni! Repellat commodi a fuga corporis saepe dolorum.</p>
+                                    <a href="#" class="btn btn-outline-primary btn-lg mt-3">
+                                        Buy Now
+                                    </a>
+                                    </div>
+                                </div>
+                                </div>
+                        
+                                <div class="col-9 col-lg-4">
+                                <div class="card border-primary border-2">
+                                    <div class="card-header text-center text-primary">Most Popular</div>
+                                    <div class="card-body text-center py-5">
+                                    <h4 class="card-title">Complete Edition</h4>
+                                    <p class="lead card-subtitle">eBook download & all updates</p>
+                                    <p class="display-4 my-4 text-primary fw-bold">$18.99</p>
+                                    <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, vitae magni! Repellat commodi a fuga corporis saepe dolorum.</p>
+                                    <a href="#" class="btn btn-outline-primary btn-lg mt-3">
+                                        Buy Now
+                                    </a>
+                                    </div>
+                                </div>
+                                </div>
+                        
+                                <div class="col-8 col-lg-4 col-xl-3">
+                                <div class="card border-0">
+                                    <div class="card-body text-center py-4">
+                                    <h4 class="card-title">Ultimate Edition</h4>
+                                    <p class="lead card-subtitle">download, updates & extras</p>
+                                    <p class="display-5 my-4 text-primary fw-bold">$24.99</p>
+                                    <p class="card-text mx-5 text-muted d-none d-lg-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, vitae magni! Repellat commodi a fuga corporis saepe dolorum.</p>
+                                    <a href="#" class="btn btn-outline-primary btn-lg mt-3">
+                                        Buy Now
+                                    </a>
+                                    </div>
+                                </div>
+                                </div>
+
+                            </div>
+
+                        </section>
+
+        Tutorial #11 - Accordions 
+
+            collapse or uncollapse contents 
+
+                index.html 
+
+                      <!-- topics at a glance -->
+                        <section id="topics">
+                            <div class="container-md">
+                            <div class="text-center">
+                                <h2>Inside the Book...</h2>
+                                <p class="lead text-muted">A quick glance at the topics you'll learn</p>
+                            </div>
+                            <div class="row my-5 g-5 justify-content-around align-items-center">
+                                <div class="col-6 col-lg-4">
+                                <img src="/assets/kindle.png" class="img-fluid" alt="ebook">
+                                </div>
+                                <div class="col-lg-6">
+                                
+                                <!-- accordion -->
+                                <div class="accordion" id="chapters">
+                                    <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading-1">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-1" aria-expanded="true" aria-controls="chapter-1">
+                                        Chapter 1 - Your First Web Page
+                                        </button>
+                                    </h2>
+                                    <div id="chapter-1" class="accordion-collapse collapse show" aria-labelledby="heading-1" data-bs-parent="#chapters">
+                                        <div class="accordion-body">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis assumenda delectus sapiente quidem consequatur odit adipisci necessitatibus nemo aliquid minus modi tempore quibusdam quas vitae, animi ipsam nulla sunt alias.</p>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis assumenda delectus sapiente quidem consequatur odit adipisci necessitatibus nemo aliquid minus modi tempore quibusdam quas vitae, animi ipsam nulla sunt alias.</p>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading-2">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-2" aria-expanded="false" aria-controls="chapter-2">
+                                        Chapter 2 - Mastering CSS
+                                        </button>
+                                    </h2>
+                                    <div id="chapter-2" class="accordion-collapse collapse" aria-labelledby="heading-2" data-bs-parent="#chapters">
+                                        <div class="accordion-body">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis assumenda delectus sapiente quidem consequatur odit adipisci necessitatibus nemo aliquid minus modi tempore quibusdam quas vitae, animi ipsam nulla sunt alias.</p>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis assumenda delectus sapiente quidem consequatur odit adipisci necessitatibus nemo aliquid minus modi tempore quibusdam quas vitae, animi ipsam nulla sunt alias.</p>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading-3">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-3" aria-expanded="false" aria-controls="chapter-1">
+                                        Chapter 3 - The Power of JavaScript
+                                        </button>
+                                    </h2>
+                                    <div id="chapter-3" class="accordion-collapse collapse" aria-labelledby="heading-3" data-bs-parent="#chapters">
+                                        <div class="accordion-body">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis assumenda delectus sapiente quidem consequatur odit adipisci necessitatibus nemo aliquid minus modi tempore quibusdam quas vitae, animi ipsam nulla sunt alias.</p>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis assumenda delectus sapiente quidem consequatur odit adipisci necessitatibus nemo aliquid minus modi tempore quibusdam quas vitae, animi ipsam nulla sunt alias.</p>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading-4">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-4" aria-expanded="false" aria-controls="chapter-4">
+                                        Chapter 4 - Storing Data (Firebase Databases)
+                                        </button>
+                                    </h2>
+                                    <div id="chapter-4" class="accordion-collapse collapse" aria-labelledby="heading-4" data-bs-parent="#chapters">
+                                        <div class="accordion-body">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis assumenda delectus sapiente quidem consequatur odit adipisci necessitatibus nemo aliquid minus modi tempore quibusdam quas vitae, animi ipsam nulla sunt alias.</p>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis assumenda delectus sapiente quidem consequatur odit adipisci necessitatibus nemo aliquid minus modi tempore quibusdam quas vitae, animi ipsam nulla sunt alias.</p>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                    <h2 class="accordion-header" id="heading-5">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-5" aria-expanded="false" aria-controls="chapter-5">
+                                        Chapter 5 - User Authentication
+                                        </button>
+                                    </h2>
+                                    <div id="chapter-5" class="accordion-collapse collapse" aria-labelledby="heading-5" data-bs-parent="#chapters">
+                                        <div class="accordion-body">
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis assumenda delectus sapiente quidem consequatur odit adipisci necessitatibus nemo aliquid minus modi tempore quibusdam quas vitae, animi ipsam nulla sunt alias.</p>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis assumenda delectus sapiente quidem consequatur odit adipisci necessitatibus nemo aliquid minus modi tempore quibusdam quas vitae, animi ipsam nulla sunt alias.</p>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+
+                                </div> 
+                            </div>
+                            </div>
+                        </section>
+
+        Tutorial #12 - List Groups
+
+                - we can group lilsts as we need in bootstrap list class 
+
+                index.html file 
+
+
+                       <section id="reviews" class="bg-light">
+
+                            <div class="container-lg">
+
+                                <div class="text-center">
+                                    <h2>Book Reviews</h2>
+                                    <p class="lead">What my students have said about the book...</p>
+                                </div>
+
+                                <div class="row justify-content-center">
+
+                                    <div class="col-lg-8">
+
+                                        <div class="list-group">
+
+                                            <div class="list-group-item py-3">
+                                                <h5 class="mb-1">A must buy for every aspiring web dev</h5>
+                                                <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, voluptates? Nostrum impedit aut, dicta ut maxime optio nemo harum nam officiis porro minus iure obcaecati necessitatibus vero, totam vitae consequuntur quibusdam quas perspiciatis at, ea pariatur blanditiis mollitia. Beatae, veritatis.</p>
+                                                <small>Review by Mario</small>
+                                            </div>
+
+                                            <div class="list-group-item py-3">
+                                                <h5 class="mb-1">A must buy for every aspiring web dev</h5>
+                                                <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, voluptates? Nostrum impedit aut, dicta ut maxime optio nemo harum nam officiis porro minus iure obcaecati necessitatibus vero, totam vitae consequuntur quibusdam quas perspiciatis at, ea pariatur blanditiis mollitia. Beatae, veritatis.</p>
+                                                <small>Review by Mario</small>
+                                            </div>
+
+                                            <div class="list-group-item py-3">
+                                                <h5 class="mb-1">A must buy for every aspiring web dev</h5>
+                                                <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, voluptates? Nostrum impedit aut, dicta ut maxime optio nemo harum nam officiis porro minus iure obcaecati necessitatibus vero, totam vitae consequuntur quibusdam quas perspiciatis at, ea pariatur blanditiis mollitia. Beatae, veritatis.</p>
+                                                <small>Review by Mario</small>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </section>
+
+        Tutorial #13 - Bootstrap Icons
+
+                - we can include bootstrap icon cdn(link from the website)
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+                - then we can search for the icon we want and include them in our html file 
+
+                                <i class="bi bi-star-fill"></i>
+
+        Tutorial #14 - Working with Forms  
+
+                forms have their own class we can use them that way 
+
+                index.html 
+
+                        <!-- Contact form -->
+                        <!-- form-control, form-label, form-select, input-group, input-group-text -->
+                        <section id="contact">
+
+                            <div class="container-lg">
+
+                                <div class="text-center">
+
+                                    <h2>Get in Touch</h2>
+                                    <p class="lead">Questions to ask? Fill out the form to contact me directly...</p>
+                                </div>
+
+                                <div class="row justify-content-center my-5">
+
+                                    <div class="col-lg-6">
+
+                                        <form>
+
+                                            <label for="email" class="form-label">Email address:</label>
+                                            <div class="mb-4 input-group">
+                                                <span class="input-group-text">
+                                                    <i class ="bi bi-envelope-fill"></i>
+                                                </span>
+                                            <input type="email" class="form-control" id="email" placeholder="e.g. mario@example.com">
+                                            </div>
+                                            
+                                            <label for="name" class="form-label">Name:</label>
+
+                                            <div class="input-group mb-4">
+
+                                                <span class="input-group-text">
+                                            
+                                                    <i class ="bi bi-person-fill"></i>
+                                                </span>
+                                            <input type="text" class="form-control" id="name" placeholder="e.g. Mario">
+
+
+                                            </div>
+
+                                            <label for="subject" class="form-label">What is your question about?</label>
+                                            <div class="input-group mb-4">
+                                                <span class="input-group-text">
+                                                    <i class ="bi bi-chat-right-dots-fill"></i>
+                                                </span>
+                                                <select name="" id="subject" class="form-select">
+                                                    <option value="pricing" selected>Pricing query</option>
+                                                    <option value="content">Content query</option>
+                                                    <option value="other">Other query</option>
+                        
+                                                </select>
+
+                                            </div>
+                            
+
+                                            <div class="form-floating mb-4 mt-5">
+                                            <textarea name="" class="form-control" id="query" style="height:140px;"></textarea>
+                                            <label for="query">Your query...</label>
+                                            
+                                            </div>
+
+                                            <div class="mb-4 text-center">
+                                                <button type="submit" class="btn btn-secondary">Submit</button>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </section>
+
+        Tutorial #15 - Tooltips 
+
+            more info when hovering on components 
+
+            require copy and pasting some js
+
+            we hav a js script file we included 
+
+                <script>
+
+                    const tooltips = document.querySelectorAll('.tt')
+                    tooltips.forEach(t =>{
+
+                        new bootstrap.Tooltip(t); 
+                    })
+                </script>
+
+            and we edited some html using the class "tt", we created it on our own it's not a bootstrap class 
+
+        Tutorial #16 - Modals 
+
+
+                index.html
+
+                     <!-- get updates / modal trigger -->
+
+                        <section class="bg-light">
+
+                            <div class="container">
+                                <div class="text-center">
+                                    <h2>Stay in the loop</h2>
+                                    <p class="lead">Get the latest updates as they happen...</p>
+                                </div>
+
+                                <div class="row justify-content-center">
+
+                                    <div class="col-md-8 text-center">
+                                        <p class="text-muted my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae magnam voluptatum consequuntur similique possimus ducimus asperiores enim nesciunt eaque, fugit, commodi reiciendis doloremque quo, rerum autem! Vitae fugiat tempore officiis?</p>
+                                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reg-modal">
+
+                                            Register for Updates 
+                                        </button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+
+                        <!-- Modal itself -->
+
+                        <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title"aria-hidden="true">
+
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+
+                                        <h5 class="modal-title" id="modal-title">Get the Latest Updates</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo natus pariatur corrupti reiciendis, voluptatem vero ipsam maiores ex earum unde facilis dolorem maxime nostrum aut. Accusamus fuga iure unde et!</p>
+                                        <label for="modal-email" class="form-label">Your email address:</label>
+                                        <input type="email" class="form-control" id="modal-email" placeholder="e.g.mario@example.com">
+
+                                    </div>
+
+                                    <div class="modal-footer">
+                                        <button class="btn btn-primary">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+        Tutorial #17 - Offcanvas
+
+                            <!-- open sider / offcanvas -->
+                            <a href="#sidebar" class="d-block mt-3" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">
+                                Explore my other books
+                            </a>
+
+
+                                <!-- offcanvas -->
+
+                                    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+
+                                        <div class="offcanvas-header">
+
+                                            <h5 class="offcanvas-title" id="sidebar-label">My Other Books</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+
+                                        <div class="offcanvas-body">
+                                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, repellat architecto eos maxime iste iure odit, asperiores nemo dolores, eveniet repudiandae. Nisi nam ea dicta! Dignissimos at eaque corrupti nesciunt!</p>
+                                        </div>
+
+                                        
+                                    </div>
+
+        Tutorial #18 - Dropdowns in canvas
+
+                      <!-- dropdown -->
+                        <div class="dropdown mt-3">
+
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="book-dropdown" data-bs-toggle="dropdown">
+
+                                Choose a book title
+
+                            </button>
+
+                            <ul class="dropdown-menu" aria-labelledby="book-dropdown">
+
+
+                                <li><a href="#" class="dropdown-item">Become a Rect Superhero</a></li>
+                                <li><a href="#" class="dropdown-item">Concquering Vue.js</a></li>
+                                <li><a href="#" class="dropdown-item">Levelling up Your Next.js</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+        Tutorial #19 - Customizing Bootstrap 
+
+                2 ways 
+
+                    - one is to create your own stylesheet and include it 
+                    - another is to use custom SASS properties 
+                        - to use it we will install bootstrap locally using npm
+                        - npm init 
+                        - npm install bootstrap 
+                        - we can use extension called live sass compiler to compile sass to css 
+                        - to Setup where the compiled file is stored,  we go to settings and serach for live sass format
+                        - then click live sass format then change the line in json file to  "savePath": "/css".
+                        - then there will be a "watchsass" button at the bottom of vscode 
+                        - then we can replace the imported bootstrap instead with our css file 
+
+        Tutorial #20 - Tabs 
+
+                has it's own file 
+                 and check it with internet because it requires a javascript snippet from the internet(bootstrap website)      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
